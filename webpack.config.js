@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./app/basic.ts",
+  entry: "./app/index.ts",
   devtool: "inline-source-map",
   mode: "development",
   module: {
@@ -8,6 +8,10 @@ module.exports = {
         test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
