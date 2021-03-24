@@ -1,6 +1,6 @@
 import Customer from "./customer";
 
-let firstCustomer = new Customer("Alice");
+let firstCustomer = new Customer("Gary");
 
 let announcement: string = firstCustomer.announce();
 
