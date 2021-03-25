@@ -1,4 +1,5 @@
 import "../styles/main.scss";
+import _ from "lodash";
 
 import Customer from "./customer";
 
@@ -8,4 +9,4 @@ let announcement: string = firstCustomer.announce();
 
 let heading = document.querySelector("h1");
 
-heading!.textContent = announcement;
+heading!.textContent = _.upperCase(announcement);
